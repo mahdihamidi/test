@@ -62,18 +62,81 @@ height:200px ;
 display: inline-block;
 background-color: blue;
 } */
-.cart{
+/* .cart{
   width: 100%;
   display: flex;
 justify-content: space-between;
-font-size:20px ;
+font-size:1.9rem ;
+}
+
+.cart #wifi:hover{
+color: blue;
+}
+.cart #shop:hover{
+  color:brown
+}
+.cart #chat:hover{
+  color: blueviolet;
+}
+.cart span:hover{
+color: chartreuse;
+} */
+body{
+  height: 50vh;
+ 
+}
+.parent{
+width:80%;
+height:80%;
+background-color: cyan;
+border: 1px solid black;
+margin: 10%;
+position: relative;
 
 }
- .cart span{
-display:inline-block;
 
-justify-content: space-between;
+
+.parent::after{
+  content: "";
+width: 20%;
+height: 20%;
+border-radius:70% ;
+background-color: cadetblue;
+border: 2px solid black;
+display: inline-block;
+position:absolute;
 }
+.parent:hover::after{
+  cursor:pointer;
+animation-name:test ;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+
+}
+
+/* @keyframes test {
+  0%   {background-color:gold; left:0px; top:0px;}
+  25%  {background-color:green; left:80%; top:0px;}
+  50%  {background-color:red; left:80%; top:80%;}
+  75%  {background-color:orange; left:0px; top:80%;}
+  100% {background-color:orchid; left:0px; top:0px;}
+} */
+@keyframes test{
+0%{background-color: orchid;top:0px;left: 0px;}
+50%{background-color: peru;top:80%;left: 0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
  
